@@ -21,7 +21,6 @@
                 Este tipo de comentário permite
                 várias linhas ao mesmo tempo.
             */
-
         ?>
     </body>
 </html>
