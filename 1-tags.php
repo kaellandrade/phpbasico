@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Aula 1 PHP</title>
+    <title>Aula 1</title>
 </head>
 <body>
     <?php
