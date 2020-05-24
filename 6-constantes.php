@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aula 5 - Concatenação</title>
+        <title>Aula 6 - Constante</title>
     </head>
 
     <body>
@@ -17,7 +17,7 @@
             echo BD_URL . '<br/>';
             echo BD_USUARIO . '<br/>';
             echo BD_SENHA . '<br/>';
-    
+            
         ?>
 
     </body>
