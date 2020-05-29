@@ -3,6 +3,7 @@
 Scripts criados no curso de [Desenvolvimento Web Completo 2020
 ](https://www.udemy.com/course/web-completo/).
 
+
 ## OS
 - OS: Ubuntu 20.04 focal
 - Kernel: x86_64 Linux 5.4.0-31-generic
