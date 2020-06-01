@@ -30,8 +30,7 @@
             date_default_timezone_set('America/Bahia');
 
             // recuperação da data Atual
-            // dia/mes/ano horas:minutos
-            echo date('d/m/Y H:i');
+            echo strftime('%c');
             echo '<br/>';
 
             // recupera o time default da aplicação
