@@ -11,7 +11,7 @@
 
             // sequenciais (numericos)
                 // $lista_frutas = Array('Abacate','Banana', 'Maçã','Morango','Uva'); // (1º opção)
-                $lista_frutas = ['Abacate','Banana', 'Maçã','Morango','Uva']; //(2º opção)
+                $lista_frutas = ['Abacate','Banana', true, 350,'Morango','Uva']; //(2º opção)
                 $lista_frutas[] = 'Abacaxi';
 
                 echo '<h2>var_dump()</h2>';
