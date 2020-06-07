@@ -9,7 +9,7 @@
         <h3>Pós-incremento</h3>
         <?php
             $pos = 10;
-            echo "O valor contido em a é $pos <br/>";
+            echo "O valor contido em é $pos <br/>";
             echo 'O valor contido na variável após o incremento é ' . $pos++ . ' <br/>';
             echo "O valor atualizado é $pos";
         ?>
@@ -18,8 +18,8 @@
     <h3>Pré-incremento</h3>
     <?php
         $pre = 10;
-        echo "O valor contido em a é $pre <br/>";
-        echo 'O valor contido na variável pró o incremento é ' . ++$pre . ' <br/>';
+        echo "O valor contido em é $pre <br/>";
+        echo 'O valor contido na variável após o incremento é ' . ++$pre . ' <br/>';
         echo "O valor atualizado é $pre";
     ?>
 

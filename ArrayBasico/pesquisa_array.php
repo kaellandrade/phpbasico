@@ -29,6 +29,8 @@
                 'frutas' => $lista_frutas,
                 'pessoas' => ['Mikael','Joice','Daniel','Silvania']
             ];
+            print_r($listaCoisas);
+            echo '<br/>';
             echo array_search('Joice', $listaCoisas['pessoas']); // referece ao array de pessoas
         ?>
     </body>

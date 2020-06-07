@@ -1,4 +1,5 @@
-# Scripts do Curso UDEMY
+# Scripts do Curso UDEMY<h3>
+
 
 Scripts criados no curso de [Desenvolvimento Web Completo 2020
 ](https://www.udemy.com/course/web-completo/).
@@ -14,6 +15,5 @@ Scripts criados no curso de [Desenvolvimento Web Completo 2020
 - CPU: Intel Core i3-4005U @ 4x 1,7GHz [54.0°C]
 - GPU: Intel Corporation Haswell-ULT Integrated Graphics - 
 - RAM: 3138MiB / 3840MiB
- 
 ## Ambiente utilizado
 - [XAMPP Apache + MariaDB + PHP](https://www.apachefriends.org/pt_br/index.html)

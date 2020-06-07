@@ -1,0 +1,44 @@
+/* Página login page*/
+.card-login {
+  position: relative;
+  width: 350px;
+  margin: 10px auto;
+  animation: boxshadow 2s forwards;
+}
+
+
+/* Consultar Chamado page */
+.card-consultar-chamado {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+  animation: boxshadow 2s forwards;
+}
+
+/* Home page */
+.card-home {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+  animation: boxshadow 2s forwards;
+}
+
+/* Abrir chamado page */
+.card-abrir-chamado {
+  position: relative;
+  width: 100%;
+  margin: 10px auto;
+  animation: boxshadow 2s forwards;
+}
+    
+
+@keyframes boxshadow{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.342);
+
+  }
+}

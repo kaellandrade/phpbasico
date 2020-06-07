@@ -25,7 +25,7 @@
             <li>strtoupper(<em>$var_aqui</em>)</li>
             <li>ucfirst(<em>$var_aqui</em>)</li>
             <li>strlen(<em>$var_aqui</em>)</li>
-            <li>str_replace(<em>$var_aqui</em>, <em>procurarPor</em>, <em>substituirPor</em>)</li>
+            <li>str_replace(<em>procurarPor</em>, <em>substituirPor</em>, <em>$var_aqui</em>)</li>
             <li>substr(<em>$var_aqui</em>, <em>number</em>, <em>number</em>)</li>
 
         </ol>
@@ -49,7 +49,6 @@
 
             // string replace str_replace(<procuraPor>, <substituiPor, $string>)
             echo '5. '. str_replace('PHP','JavaScript',$texto) . '<br>';
-
 
             // string substr($string, inicio, fim>)
             echo '6. '. substr($texto, 6, 8) . '<br>';

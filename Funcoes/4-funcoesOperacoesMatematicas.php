@@ -35,13 +35,13 @@
 
         <?php
             $number = 7.456;
-            echo "Texto original : '$number'";
+            echo "Texto original : $number";
             echo '<hr/>';
            
             // arredonda para cima
             echo 'A. '.ceil($number) . '<br>';
 
-            // arredonda para cima
+            // arredonda para baixo
             echo 'B. '. floor($number) . '<br>';
 
             // arredonda com base na fração
@@ -55,10 +55,6 @@
             
             // maior valor que o rand pode retornar
             echo 'F. Maior valor do rand: ' . '<strong>'.getrandmax().'</strong>'.'<br/>'; 
-
-
-            // string replace str_replace(<procuraPor>, <substituiPor, $string>)
-            // echo '5. '. str_replace('PHP','JavaScript',$number) . '<br>';
 
         ?>
         
