@@ -11,6 +11,7 @@ Ao enviar alguns dados de um formulário para o determinado Script PHP, nós pod
 * `$_GET` 
 * `$_POST`
 
+# Autenticando Páginas 🔐
 
 ## Referências
 - [🇧ootstrap](https://getbootstrap.com/)
