@@ -32,9 +32,15 @@
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
-                <? if(isset($_GET['login'])){?>                  
-                <div class="text-danger">
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro'){?>                  
+                <div class="text-center alert alert-danger" role="alert">
                   Usuário ou senha Inválido(s)
+                </div>
+                <? } ?>
+
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro2'){?>                  
+                <div class="text-center alert alert-warning" role="alert">
+                  Faça login primeiro!
                 </div>
                 <? } ?>
 

@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     // Variável que identifica a validação;
     $usuarios_autenticado = false;
     
@@ -25,7 +27,9 @@
 
         if($usuarios_autenticado){
             echo 'Usuário autenticado!';
+            $_SESSION['autenticado'] = true;
         }else{
+            $_SESSION['autenticado'] = false;
             header('Location: index.php?login=erro'); //! força o redirecionamento 
         }
 
