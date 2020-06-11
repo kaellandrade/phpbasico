@@ -20,8 +20,16 @@ O PHP oferece recuros para proteção de páginas. Esses recursos são bastante 
 
 * `isset($VAR)` Verifica se ovalor de um parâmetro está setado.
 
+# Incorporando Scripts 🔗
+A técnica de incorporação de scripts permite compartilhar determinados scripts entre diversas páginas. Essa abordagem consiste em aumentar a produtividade e deixar a aplicação menos verbosa e, consequentimente de fácil entendimento para quem está lendo o código. Para usarmos o compartilhamento de scripts o PHP possibilita quatro construtores. São elas:
 
-## Referências
+* `include("script.php") ou include "script.php"` adiciona um script que está localizado em um determinado path.  Porém, se o script não for encontrado o construtor irá lançar um aviso, **sem cortar o fluxo da aplicação**.
+
+* `require` Semelhante ao `include` adiciona um determinado script da mesma forma, todavia, se o script não for encontrado o construtor lançará um fatal erro, **cortando assim o fluxo da aplicação**
+
+* `require_once` e `include_once` possuí o mesmo comportamento dos mesmo citados anteriormente, porém esses dois construtores  adciona o script **apenas uma vez** desconsiderando futuras implementações.
+
+# Referências
 - [🇧ootstrap](https://getbootstrap.com/)
 - [🇽AMPP](https://www.apachefriends.org/pt_br/index.html)
 
