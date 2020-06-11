@@ -12,6 +12,14 @@ Ao enviar alguns dados de um formulário para o determinado Script PHP, nós pod
 * `$_POST`
 
 # Autenticando Páginas 🔐
+O PHP oferece recuros para proteção de páginas. Esses recursos são bastante usados para autenticar um usúario a fim de receber determinado conteúdo. 
+
+* `session_start()` Comando usado para criar uma sessão. Esse comando, em conjunto com determinado método de autenticação, é muito usado para restringir o acesso a páginas WEB.
+
+* `($_SESSION)` Super global onde será criado valores para cada instância do navegador. Essa super global pode ser compartilhada para diversas páginas da aplicação. Lembrando que é um essa super global é **array**.
+
+* `isset($VAR)` Verifica se ovalor de um parâmetro está setado.
+
 
 ## Referências
 - [🇧ootstrap](https://getbootstrap.com/)

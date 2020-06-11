@@ -33,9 +33,9 @@
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
                 <? if(isset($_GET['login']) && $_GET['login'] == 'erro'){?>                  
-                <div class="text-center alert alert-danger" role="alert">
-                  Usuário ou senha Inválido(s)
-                </div>
+                  <div class="text-center alert alert-danger" role="alert">
+                    Usuário ou senha Inválido(s)
+                  </div>
                 <? } ?>
 
                 <? if(isset($_GET['login']) && $_GET['login'] == 'erro2'){?>                  
