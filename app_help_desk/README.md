@@ -1,7 +1,7 @@
 # App Help Desk 💻
 
 # Formulários 📎
-Os formulários é uma maneira bastante usada em desenvolvimento WEB para recuperar ou inserir dados em uma página WEB. 
+O formulário é uma maneira bastante usada em desenvolvimento WEB para recuperar ou inserir dados em uma página WEB. 
 Para fazer com que os formulários funcionem em PHP, precisamos de alguns atributos do HTML, são eles:
 * `action = "script_form.php"` Nos diz para onde enviar os dados desse formulário. 
 * `method = "get ou post"` Informa a maneira de enviar esses dados, `method = get` é o padrão.
