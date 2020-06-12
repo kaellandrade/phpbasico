@@ -17,11 +17,13 @@
         // Compara o valor do form com o banco
         if(($user['email'] === $_POST['email']) && ($user['senha'] === $_POST['senha'])){
             $usuarios_autenticado = true;
-        }] 
+        } 
     }
 
         if($usuarios_autenticado){
             $_SESSION['autenticado'] = true;
+            $_SESSION['x'] = 'valor x'; //! Apenas para debug
+            $_SESSION['y'] = 'valor y'; //! Apenas para debug
             header('Location: home.php');
         }else{
             $_SESSION['autenticado'] = false;

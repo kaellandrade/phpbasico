@@ -9,6 +9,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
+    
+    <!-- FontAwesome  -->
+    <script src="https://kit.fontawesome.com/d393abca71.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -18,6 +21,13 @@
         <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          
+          <a class="nav-link" href="logoff.php">SAIR <i class="fas fa-sign-out-alt"></i></a>
+        </li>
+      </ul>
     </nav>
 
     <div class="container">    

@@ -29,7 +29,21 @@ A técnica de incorporação de scripts permite compartilhar determinados script
 
 * `require_once` e `include_once` possuí o mesmo comportamento dos mesmo citados anteriormente, porém esses dois construtores  adciona o script **apenas uma vez** desconsiderando futuras implementações.
 
+# Encerrando a Sessão (logoff) 🔻
+Em PHP podemos encerrar uma sessão de duas meneiras diferentes. Uma é destruíndo todos os vaores da `$_SESSION`, e a outra é apagado um índice específico. Veja abaixo as duas maneiras:
+
+- `session_destroy()` permite destruir todos os valores contidos dentro da super global session (`$_SESSION`), ou seja, todos os índices e valores da super global serão apagados. **DEPOIS DE DESTRUIR TODAS OS VALORES DE SESSION É NECESSÁRIO UM RELOAD DA PÁGINA.**
+
+- `unset($_SESSION['indice'])` essa outra abordagem espera um *array* e seu respectivo índice à ser removido. Essa abordagem permite a remoção de um índice específico de qualquer *array*, mas nesse caso usamos a própria super global session.
+
+
+
+
+
+
+
+
 # Referências
 - [🇧ootstrap](https://getbootstrap.com/)
 - [🇽AMPP](https://www.apachefriends.org/pt_br/index.html)
-
+- [🇫ontawesome](https://fontawesome.com/)
