@@ -36,9 +36,40 @@ Em PHP podemos encerrar uma sessão de duas meneiras diferentes. Uma é destruí
 
 - `unset($_SESSION['indice'])` essa outra abordagem espera um *array* e seu respectivo índice à ser removido. Essa abordagem permite a remoção de um índice específico de qualquer *array*, mas nesse caso usamos a própria super global session.
 
+# Escrevendo em arquivos 🔻
+Linguagem de programação permite a gravação de dados em arquivos textos. Com o PHP não é diferente, veja
+como podemos gravar arquivos textos com PHP.
 
+- `fopen('poesia.txt', 'a')`
+Cria um arquivo chamado *poesia.txt* de somente escrita **a**
+- `fwrite($arquivoVAR, 'TEXTO')`
+Escreve no arquivo.
+- `fclose($arquivoVAR)`
+Fecha o arquivo que foi criado.
 
+Veja o código abaixo:
+```php
+    $texto = "Um galo sozinho não tece uma manhã - João . C"
+    $arquivo = fopen('poesia.txt', 'a'); // abrindo um arquivo de texto
+    fwrite($arquivo, $texto); // escreve no arquivo indicado
+    fclose($arquivo);   
+```
+parametros que podemos passar para `fopen`
+- `'r'` Abre somente para leitura; coloca o ponteiro do arquivo no começo do arquivo
 
+- `'r+'` Abre para leitura e escrita; coloca o ponteiro do arquivo no começo do arquivo
+
+- `'w'` Abre somente para escrita; coloca o ponteiro do arquivo no começo do arquivo e reduz o comprimento do arquivo para zero. Se o arquivo não exitir, tenta criá-lo.
+
+- `'w+'` Abre para leitura e escrita; coloca o ponteiro do arquivo no começo do arquivo e reduz o comprimento do arquivo para zero. Se o arquivo não exitir, tenta criá-lo.
+
+- `'a'` Abre somente para escrita ; coloca o ponteiro do arquivo no final do arquivo. Se o arquivo não exitir, tenta criá-lo.
+
+- `'a+'` Abre para leitura e escrita ; coloca o ponteiro do arquivo no final do arquivo. Se o arquivo não exitir, tenta criá-lo.
+
+- `'x'` Cria e abre o arquivo somente para escrita; coloca o ponteiro no começo do arquivo. Se o arquivo já existir, a chamada a **fopen()** falhará, retornando **FALSE** e gerando um erro nível **E_WARNING**. Se o arquivo não existir, tenta criá-lo.
+
+- `'x+'` Cria e abre o arquivo para leitura e escrita; coloca o ponteiro no começo do arquivo. Se o arquivo já existir, a chamada a **fopen()** falhará, retornando **FALSE** e gerando um erro nível **E_WARNING**. Se o arquivo não existir, tenta criá-lo.
 
 
 
