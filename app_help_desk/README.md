@@ -71,6 +71,18 @@ parametros que podemos passar para `fopen`
 
 - `'x+'` Cria e abre o arquivo para leitura e escrita; coloca o ponteiro no começo do arquivo. Se o arquivo já existir, a chamada a **fopen()** falhará, retornando **FALSE** e gerando um erro nível **E_WARNING**. Se o arquivo não existir, tenta criá-lo.
 
+# Lendo arquivos texto
+O PHP não só permite escrever em aquivos, além disso, é possível ler os arquivos que foram salvos. O processo é bastante semelhante vejamos como podemos ler um arquivo de múltiplas linhas:
+
+```PHP
+    $arquivo = fopen("arquivo.txt", "r");
+    while(!feof($arquivo)){
+        echo fgets($arquivo) . '<br/>';
+    }
+    fclose($arquivo);
+```
+
+
 
 
 
