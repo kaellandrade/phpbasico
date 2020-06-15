@@ -75,15 +75,19 @@ parametros que podemos passar para `fopen`
 O PHP não só permite escrever em aquivos, além disso, é possível ler os arquivos que foram salvos. O processo é bastante semelhante vejamos como podemos ler um arquivo de múltiplas linhas:
 
 ```PHP
-    $arquivo = fopen("arquivo.txt", "r");
-    while(!feof($arquivo)){
-        echo fgets($arquivo) . '<br/>';
+    $arquivo = fopen("arquivo.txt", "r"); #{1}
+    while(!feof($arquivo)){#{2}
+        echo fgets($arquivo) . '<br/>';#{3}
     }
-    fclose($arquivo);
+    fclose($arquivo);#{4}
 ```
+1. `fopen` Abri o arquivo **arquivo.txt** somente para leitura `'r'`
 
+2. `feof` *end-of-file*  Testa pelo fim do arquivo em um ponteiro de arquivo. Retorna **TRUE** se oponteiro estiver no fim do arquivo. Caso contrário retorna **FALSE**.
 
+3. `fgets` Ler uma linha de um ponteiro de arquivo.
 
+4. `fclose` Fecha **$arquivo**.
 
 
 # Referências

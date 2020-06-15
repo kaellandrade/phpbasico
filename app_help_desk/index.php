@@ -25,12 +25,14 @@
               Login
             </div>
             <div class="card-body">
-              <form action="valida_login.php" method="post">
+              <form class="form-horizontal" action="valida_login.php" method="post">
                 <div class="form-group">
-                  <input name="email" type="email" class="form-control" placeholder="E-mail">
+                  <label for="email">E-mail</label>
+                  <input id="email" name="email" type="email" class="form-control" placeholder="E-mail">
                 </div>
                 <div class="form-group">
-                  <input name="senha" type="password" class="form-control" placeholder="Senha">
+                  <label for="senha">Senha</label>
+                  <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
                 <? if(isset($_GET['login']) && $_GET['login'] == 'erro'){?>                  
                   <div class="text-center alert alert-danger" role="alert">
