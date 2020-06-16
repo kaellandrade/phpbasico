@@ -8,10 +8,23 @@
   $arquivo = fopen("arquivo.txt", "r");
   while(!feof($arquivo)){ // testa pelo fim de um arquivo
     // linhas
-    $registro = fgets($arquivo); // recupera o que está na linha
-    $chamados[] = $registro;
+    $chamado_linha = fgets($arquivo); // recupera o que está na linha
+    $registro = explode('#', $chamado_linha);
+  
+    if(count($registro) < 3){ // caso o registro esteja imcompleto
+      continue;
+    }
+
+    if($_SESSION['perfil_id'] == 2){ // não é admim ?
+      if($_SESSION['id'] != $registro[3]){ // o id do usuário atual é diferente do id cadastrado no registro ?
+        continue;
+      };
+    };
+
+    $chamados[] = $chamado_linha;
   };
   fclose($arquivo);
+
 ?>
 
 <html>
@@ -55,15 +68,7 @@
               <?php 
                 foreach($chamados as $chamado){
                   $linha = explode('#', $chamado);
-                  if(count($linha)<3){
-                    continue;
-                  };
-                  if($_SESSION['perfil_id'] == 2){
-                    if($_SESSION['id'] != $linha[3]){
-                      continue;
-                    };
-                  };
-                  
+                                    
               ?>
                     <div class="card mb-3 bg-light">
                       <div class="card-body">
