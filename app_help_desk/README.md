@@ -1,4 +1,4 @@
-# App Help Desk 💻
+# App Help Desk 💻 🐘
 
 # Formulários 📎
 O formulário é uma maneira bastante usada em desenvolvimento WEB para recuperar ou inserir dados em uma página WEB. 
@@ -72,7 +72,7 @@ parametros que podemos passar para `fopen`
 - `'x+'` Cria e abre o arquivo para leitura e escrita; coloca o ponteiro no começo do arquivo. Se o arquivo já existir, a chamada a **fopen()** falhará, retornando **FALSE** e gerando um erro nível **E_WARNING**. Se o arquivo não existir, tenta criá-lo;
 
 # Lendo arquivos texto
-O PHP não só permite escrever em aquivos, além disso, é possível ler os arquivos que foram salvos. O processo é bastante semelhante vejamos como podemos ler um arquivo de múltiplas linhas:
+O PHP não só permite escrever em aquivos, além disso, é possível ler os arquivos que foram salvos. O processo é bastante semelhante com o de escrever em arquivos. Vejamos como podemos ler um arquivo de múltiplas linhas:
 
 ```PHP
     $arquivo = fopen("arquivo.txt", "r"); #{1}
