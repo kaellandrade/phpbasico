@@ -58,6 +58,12 @@
                   if(count($linha)<3){
                     continue;
                   };
+                  if($_SESSION['perfil_id'] == 2){
+                    if($_SESSION['id'] != $linha[3]){
+                      continue;
+                    };
+                  };
+                  
               ?>
                     <div class="card mb-3 bg-light">
                       <div class="card-body">
