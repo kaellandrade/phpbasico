@@ -1,16 +1,18 @@
-<?php require_once "validador_acesso.php" ?>
+<?php 
+  require_once "validador_acesso.php";
+  require_once "recupera_user_name.php";
+?>
 
 <?php // Lendo os dados de arquivo.txt
   // chamados
   $chamados = Array();
 
   // abrir o arquivo.txt
-  $arquivo = fopen("arquivo.txt", "r");
+  $arquivo = fopen("../../../app_help_desk/arquivo.txt", "r");
   while(!feof($arquivo)){ // testa pelo fim de um arquivo
     // linhas
     $chamado_linha = fgets($arquivo); // recupera o que está na linha
     $registro = explode('#', $chamado_linha);
-  
     if(count($registro) < 3){ // caso o registro esteja imcompleto
       continue;
     }
@@ -24,6 +26,9 @@
     $chamados[] = $chamado_linha;
   };
   fclose($arquivo);
+  // echo '<pre>';// ! apenas para debug
+    // print_r($chamados);// ! apenas para debug
+  // echo '</pre>';// ! apenas para debug
 
 ?>
 
@@ -41,17 +46,34 @@
 
   <body>
 
-    <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          
-          <a class="nav-link" href="logoff.php">SAIR <i class="fas fa-sign-out-alt"></i></a>
-        </li>
-      </ul>
+      <button button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle mr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <?= $user_name?> <i class="far fa-user"></i> <!--TODO: Fazer com o que usuário seja pegado dinamicamente-->
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+                <a class="dropdown-item" href="logoff.php">
+                  SAIR
+                </a>
+              </div>
+        
+            
+          </li>
+        </ul>
+      </div>      
     </nav>
 
     <div class="container">    
@@ -75,6 +97,7 @@
                         <h5 class="card-title"> <?=$linha[0]?> </h5>
                         <h6 class="card-subtitle mb-2 text-muted"> <?=$linha[1]?> </h6>
                         <p class="card-text"> <?=$linha[2]?> </p>
+                        <pnclass = "card-text"> <small class="text-muted">Publicado em <?=$linha[4]?> </small> </p>
                       </div>
                     </div>
 
@@ -93,5 +116,10 @@
         </div>
       </div>
     </div>
+
+     <!-- Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

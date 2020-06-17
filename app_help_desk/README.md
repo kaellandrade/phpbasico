@@ -89,6 +89,9 @@ O PHP não só permite escrever em aquivos, além disso, é possível ler os arq
 
 4. `fclose` Fecha **$arquivo**.
 
+# Segurança no Back-end 🔒
+- htdocs (**diretório público)
+
 
 # Referências
 - [🇧ootstrap](https://getbootstrap.com/)

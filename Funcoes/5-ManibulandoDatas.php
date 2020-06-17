@@ -26,7 +26,7 @@
         </ol>
 
         <?php
-            // configiura o timezone
+            // configura o timezone
             date_default_timezone_set('America/Bahia');
 
             // recuperação da data Atual
