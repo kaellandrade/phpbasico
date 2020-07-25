@@ -70,6 +70,8 @@
             }else{
                 echo "Não está vazia";
             }
+            echo '<br/>'
+
             
         ?>
         

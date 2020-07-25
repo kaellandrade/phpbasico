@@ -24,6 +24,7 @@
                         Array('titulo' => 'IA', 'conteudo' => 'Estudades da UFS criam robô super veloz'),
                         Array('titulo' => 'Dell', 'conteudo' => 'Promoção linha Dell Alienware'),
                         Array('titulo' => 'Samsung', 'conteudo' => 'Novo celular dobrável')
+                        
 
                     );
                 ?>

@@ -19,7 +19,7 @@
     <?php
         $pre = 10;
         echo "O valor contido em é $pre <br/>";
-        echo 'O valor contido na variável após o incremento é ' . ++$pre . ' <br/>';
+        echo 'O valor contido na variável pré o incremento é ' . ++$pre . ' <br/>';
         echo "O valor atualizado é $pre";
     ?>
 

@@ -9,7 +9,7 @@
     <body>
         <?php
 
-            // Comentário deu uma linha
+            // Comentário de uma linha
             echo 'Comando echo<br/>';
 
             # Comentário de uma linha

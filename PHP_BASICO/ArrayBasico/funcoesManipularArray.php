@@ -9,43 +9,85 @@
         li{
             margin:0.5em;
         }
+        table{
+            border-spacing: 0.2em;
+            border-collapse: separate;
+        }
+        thead{
+            color: whitesmoke;
+            background: #999;
+
+        }
+        thead th{
+            font-weight: bold;
+            padding: 0.3em 1em;
+            text-align: center;
+        }
+        td{
+            text-transform: lowercase;
+            padding: .3rem;
+            border-top: 1px solid black;
+        }
+    
+        td:nth-child(1){
+            color: tomato;
+        }
+        td:nth-child(2){
+            text-transform: uppercase;
+            color: green;
+        }
     </style>
     <body>
         <h2>Algumas Funções Nativas Para Array</h2>
-        <ul>
-            <li>
-            is_array(ARRAY_AQUI) --> VERIFICA SE É UM ARRAY
-            </li>
+         
+         <table>
+            <caption>Funções Nativas Para Manipular Array</caption>
+            <thead>
+                <th>Função</th>
+                <th>Descrição</th>
+            </thead>
 
-            <li>
-            array_keys(ARRAY_AQUI) --> RETORNA TODAS AS CHEVES DE UM ARRAY
-            </li>
+            <tr>
+                <td>is_array(ARRAY_AQUI)</td>
+                <td>VERIFICA SE É UM ARRAY</td>
+            </tr>
+            <tr>
+                <td>array_keys(ARRAY_AQUI)</td>
+                <td>RETORNA TODAS AS CHEVES DE UM ARRAY</td>
+            </tr>
 
-            <li>
-            asort()(ARRAY_AQUI) --> ORDENA UM ARRAY PRESERVANDO OS ÍNDICES
-            </li>
 
-            <li>
-            sort(ARRAY_AQUI) --> ORDENA UM ARRAY E REAJUSTA SEUS ÍNDICES
-            </li>
+            <tr>
+                <td>asort()(ARRAY_AQUI)</td>
+                <td>ORDENA UM ARRAY PRESERVANDO OS ÍNDICES</td>
+            </tr>
 
-            <li>
-            count(ARRAY_AQUI) --> CONTA A QUANTIDADE DE ALEMENTOS DE UM ARRAY
-            </li>
+            <tr>
+                <td>sort(ARRAY_AQUI)</td>
+                <td>ORDENA UM ARRAY PRESERVANDO OS ÍNDICES</td>
+            </tr>
 
-            <li>
-            array_merge(ARRAY1_ARRAY2...) --> FUNDE DOIS OU MAIS ARRAYS
-            </li>
+            <tr>
+                <td>count(ARRAY_AQUI)</td>  
+                <td>CONTA A QUANTIDADE DE ALEMENTOS DE UM ARRAY</td> 
+            </tr>
 
-            <li>
-            explode('CARACTER', STRING_AQUI) --> DIVIDE UMA STRING BASEADA EM UM DELIMITADOR
-            </li>
+            <tr>
+                <td>array_merge(ARRAY1_ARRAY2...)</td>
+                 <td>FUNDE DOIS OU MAIS ARRAYS</td>
+            </tr>
 
-            <li>
-            implode('CARACTER', ARRAY_AQUI) --> JUNTA ELEMENTOS DE UM ARRAY EM UMA STRING
-            </li>
+            <tr>
+                <td>explode('CARACTER', STRING_AQUI)</td>
+                <td>DIVIDE UMA STRING BASEADA EM UM DELIMITADOR</td>
+            </tr>
 
-        </ul>
+            <tr>
+                <td>implode('CARACTER', ARRAY_AQUI)</td>
+                <td>JUNTA ELEMENTOS DE UM ARRAY EM UMA STRING</td>
+            </tr>
+         </table>
+            
         <?php
 
             $array = [

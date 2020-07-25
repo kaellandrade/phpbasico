@@ -13,10 +13,11 @@
             $idade = 24;
             $hobby = 'ouvir música';
             
-            // operador .
-            // ideal para usar só quando tenho strings,
-            // ou seja, sem necessidade de concatenação
-            
+            /*
+                operador .
+                ideal para usar só quando tenho strings,
+                ou seja, sem necessidade de concatenação
+            */
             echo '<h3>Operador "."</h3>';
             echo 'Olá ' . $nome . ', vi que sua cor preferida é ' . $cor . ' e que 
             você tem ' . $idade . ' anos e gosta de '. $hobby.'!';

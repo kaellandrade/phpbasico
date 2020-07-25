@@ -13,7 +13,7 @@
             # != ou <>  diferente
             # !==       diferente no tipo e no valor
             # <, > menor e maior que, respectivamente
-            # <=, >= menor ou igual e maior o igual que, respectivamente
+            # <=, >= menor ou igual que e maior o igual que, respectivamente
             if (true == 'true') {
                 echo 'Verdadeiro';
             }else{

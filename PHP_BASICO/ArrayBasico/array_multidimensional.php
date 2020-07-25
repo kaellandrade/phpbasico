@@ -28,7 +28,13 @@
                     print_r($lista_coisas);
                 echo '</pre>';
                 echo '<hr/>';
-                print_r($lista_coisas['frutas'][3]) // morango
+
+                print_r($lista_coisas['frutas'][3]); // morango
+                echo '<hr/>';
+
+                echo '<pre>';
+                    print_r($lista_coisas['frutas']); // morango
+                echo '</pre>';
         ?>
     </body>
 </html>
