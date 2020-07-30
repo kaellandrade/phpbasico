@@ -71,10 +71,6 @@
     $x->__get('cargo') . ' com salário de ' . $x->__get('salario') . 
     ' contato ' . $x->__get('telefone');
 
-    // $x = new Funcionario();
-    // echo '<br />';
-
-
     
 
 
